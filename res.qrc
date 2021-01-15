@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/spirt.jpg</file>
+        <file>img/spirt2.jpg</file>
+        <file>img/edit-add_7002.ico</file>
+        <file>img/error_1644.ico</file>
+        <file>img/spirt3.jpg</file>
+        <file>img/exit_5866.ico</file>
+        <file>img/printer_1094.ico</file>
+        <file>img/refresh_6569.ico</file>
+        <file>img/spirtOpens.jpg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QMdiArea" name="my_mdi">
+      <property name="activationOrder">
+       <enum>QMdiArea::CreationOrder</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>ФАЙЛ</string>
+    </property>
+    <addaction name="action_new"/>
+    <addaction name="separator"/>
+    <addaction name="action_open"/>
+    <addaction name="separator"/>
+    <addaction name="action_save"/>
+    <addaction name="separator"/>
+    <addaction name="action_save_as"/>
+    <addaction name="separator"/>
+    <addaction name="action_quit"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="addRow"/>
+   <addaction name="actionDelRow"/>
+   <addaction name="actionPrint"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_new">
+   <property name="text">
+    <string>Новый</string>
+   </property>
+  </action>
+  <action name="action_save">
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+  </action>
+  <action name="action_save_as">
+   <property name="text">
+    <string>Сохранить как</string>
+   </property>
+  </action>
+  <action name="action_open">
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+  </action>
+  <action name="action_quit">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="addRow">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/img/edit-add_7002.ico</normaloff>:/img/img/edit-add_7002.ico</iconset>
+   </property>
+   <property name="text">
+    <string>addRow</string>
+   </property>
+   <property name="toolTip">
+    <string>Добавить строку</string>
+   </property>
+  </action>
+  <action name="actionDelRow">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/img/error_1644.ico</normaloff>:/img/img/error_1644.ico</iconset>
+   </property>
+   <property name="text">
+    <string>delRow</string>
+   </property>
+   <property name="toolTip">
+    <string>удалить строку</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/img/printer_1094.ico</normaloff>:/img/img/printer_1094.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Print</string>
+   </property>
+   <property name="toolTip">
+    <string>Печать</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
